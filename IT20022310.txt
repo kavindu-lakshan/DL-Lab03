@@ -1,0 +1,12 @@
+1. 1D convolution involves sliding a filter (like the Sobel filter) over a row or column of an image. When the filter encounters a rapid change in intensity, it produces a large positive or negative value. These values indicate edges, where there's a sharp transition between image features. Applying a threshold can help distinguish meaningful edges from noise. Although 2D convolution is more common for edge detection, 1D convolution can still capture certain edge-like features along a single direction.
+
+2. Increasing Epochs and Validation Error:
+
+Increasing epochs can lead to overfitting, where the model memorizes training data noise.
+To prevent increasing validation error, use techniques like early stopping, regularization, data augmentation, and simpler models.
+Mini-Batch SGD vs. Batch GD:
+
+Mini-batch SGD computes gradients using small subsets of data, leading to faster convergence.
+Benefits include efficient computation, noise smoothing for regularization, optimal learning rates, and adaptability to dynamic landscapes.
+Challenges involve choosing batch size and handling learning rate schedules.
+Choice depends on resources, dataset size, and problem specifics.
